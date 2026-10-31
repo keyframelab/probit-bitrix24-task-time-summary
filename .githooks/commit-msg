@@ -1,0 +1,3 @@
+#!/bin/sh
+# Header format: Conventional Commits (rule: ~/.claude/CLAUDE.md → Git commits).
+[ -f "$HOME/.claude/hooks/git/commit-msg-format.sh" ] && { sh "$HOME/.claude/hooks/git/commit-msg-format.sh" "$1" || exit 1; }
